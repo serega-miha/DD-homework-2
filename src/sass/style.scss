@@ -1,0 +1,54 @@
+@import './color.scss';
+@import './null.scss';
+
+
+@import '../components/button/style.scss';
+@import '../components/navigation/style.scss';
+@import '../components/project-item/style.scss';
+@import '../components/task-item/style.scss';
+@import '../components/empty/style.scss';
+@import '../components/status/style.scss';
+
+
+
+body {
+    background: white;
+}
+
+.picture{
+    height: 100px;
+    width: 100px;
+}
+
+
+//general styles
+.avatar-img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 0px 14px 0px 0px;
+}
+
+
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+// .fade {
+//     animation-name: fade;
+//     animation-duration: 1s;
+// }
+// .fadeOut {
+//     animation-name: fadeOut;
+//     animation-duration: 1s;
+// }
+
+
+// @keyframes fade{from{opacity: 0.1;}to{opacity: 1;}}
+// @keyframes fadeOut{from{opacity: 1;}to{opacity: 0.1;}}

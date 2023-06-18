@@ -1,0 +1,19 @@
+@import '../../sass/color.scss';
+
+
+
+.task-item__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.task-item__body-create{
+    display: flex;
+   
+}
+
+
+.menu-profile-img{
+    padding: 0px 5px;
+}

@@ -1,0 +1,40 @@
+@import '../../sass/color.scss';
+
+
+
+.statuses{
+    margin: 20px;
+}
+
+.status__list{
+    list-style: none;
+}
+
+.status__item{
+    margin: 10px 0px 0px 0px;
+    
+}
+.status{
+    margin: 0px 10px;
+    
+    color: $font-secondary;
+    border-radius: 4px;
+    padding: 0px 8px;
+}
+
+.bronze{
+    background: $border-bronze;
+}
+
+.blue{
+    background: $bg-primaryDefault;
+    
+}
+.red{
+    background: $font-error;
+    
+}
+.disable{
+    background: $font-disabled;
+    
+}

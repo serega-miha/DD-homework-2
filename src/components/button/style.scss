@@ -1,0 +1,89 @@
+@import '../../sass/color.scss';
+
+/* main styles */
+
+.btns{
+    padding: 20px;
+}
+
+.button{
+    font-family: inherit;
+    padding: 0px 16px;
+    min-height: 42px;
+    border-radius: 4px;
+    background-color: $bg-primaryDefault;
+    color: $font-secondary;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.button-cancel{
+    background-color:$bg-secondary;
+    color: $font-primaryDefault;
+    border: 1px solid $font-primaryDefault;
+}
+
+.button-disable{
+    background-color:$bg-disabled;
+    color: $font-primaryDefault;
+   
+}
+
+.button-nav {
+    border: 1px solid $font-secondary;
+   
+}
+
+.button-nav:hover {
+    background-color: $font-secondary;
+    color: $font-primaryDefault;
+}
+
+.button-nav.active{
+    background-color: $font-secondary;
+    color: $font-primaryDefault;
+}
+
+
+.button-addittionaly{
+    cursor:pointer;
+    width: 42px;
+    height: 42px;
+    
+    svg{
+        width: 4px;
+        height: 13px;
+        padding: 14.5px 19.5px;
+        border: 1px solid $border-default;
+        border-radius: 4px;
+        background-color: $bg-secondary;
+        &:hover{
+            background-color: $bg-secondaryActive;
+        }
+    }
+}
+
+
+.button-user{
+    border: 1px solid transparent;
+    &:hover{
+        border: 1px solid $font-secondary;
+    }
+
+    svg{
+        width: 13px;
+        height: 8px;
+        fill: $font-secondary;
+    }
+    &._active{
+        background-color: $bg-secondary;
+        svg{
+            fill:$bg-secondaryHover;
+        }
+    }
+}
+
+
+
