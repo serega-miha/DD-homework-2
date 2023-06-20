@@ -61,6 +61,11 @@
         background-color: $bg-secondary;
         &:hover{
             background-color: $bg-secondaryActive;
+            border: 1px solid $border-hover;
+        }
+        &._active{
+            background-color: $bg-secondaryActive;
+            border: 1px solid $border-hover;
         }
     }
 }
@@ -68,6 +73,8 @@
 
 .button-user{
     border: 1px solid transparent;
+    transition: all 0.2s;
+    
     &:hover{
         border: 1px solid $font-secondary;
     }
@@ -76,11 +83,16 @@
         width: 13px;
         height: 8px;
         fill: $font-secondary;
+        transition: all 0.2s;
+        
     }
     &._active{
         background-color: $bg-secondary;
+        transition: all 0.2s;
         svg{
             fill:$bg-secondaryHover;
+            transform: rotate(180deg);
+            transition: all 0.2s;
         }
     }
 }

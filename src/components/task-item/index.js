@@ -18,7 +18,7 @@ function taskItemCard(title,user,idArticle,authorCreate,authorUpdate, statusText
     </div>
     <div class="btn-addittionaly">
     <a class="button-addittionaly project-item__addittionaly">
-            <svg>
+            <svg class="clicker">
             <use xlink:href="#dots"/>
             </svg>
     </a>

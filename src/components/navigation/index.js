@@ -30,6 +30,7 @@ function navigation(profile) {
             <use xlink:href="#drop-down" />
             </svg>
         </a> 
+     
     <div class="btn-user__menu">
         <ul class="user__menu-list">
             <li class="user__menu-item">

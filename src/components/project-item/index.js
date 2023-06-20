@@ -20,7 +20,7 @@ function projectItemCard(title, idArticle, authorCreate, authorUpdate) {
 
         <div class="btn-addittionaly">
         <a class="button-addittionaly project-item__addittionaly">
-                <svg>
+                <svg class="clicker">
                 <use xlink:href="#dots"/>
                 </svg>
         </a>

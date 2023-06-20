@@ -27,18 +27,26 @@ function initApp(){
     navBtn.forEach(btn => {
         btn.addEventListener('click', (e)=>{
             e.preventDefault();
+           
+            
+            
+            if (btn.id === 'projects' && !btn.classList.contains('active')){
+                
+                    page.innerHTML = '';
+                    page.insertAdjacentHTML("afterbegin", projectItem(projects));
+              
+
+            } else if (btn.id === 'tasks'  && !btn.classList.contains('active')){
+                page.innerHTML = '';
+                page.insertAdjacentHTML("afterbegin", taskItem(tasks));
+                             
+            } else if (btn.id === 'users'  &&  !btn.classList.contains('active')){
+                page.innerHTML = '';
+                page.insertAdjacentHTML("afterbegin", empty());
+             
+            } 
             btnsUnActive();
             btn.classList.add('active');
-            page.innerHTML = '';
-            if (btn.id === 'projects'){
-                page.insertAdjacentHTML("afterbegin", projectItem(projects));
-            } else if (btn.id === 'tasks'){
-                page.insertAdjacentHTML("afterbegin", taskItem(tasks));
-                menuAdditionaly();
-            } else if (btn.id === 'users'){
-                page.insertAdjacentHTML("afterbegin", empty());
-            }
-
         })
     })
 
@@ -50,31 +58,52 @@ function initApp(){
     }
 
 
-    //===========================
+    //===========================click navigation
     let btnUser = document.querySelector('.btn-user');
     let btnUserMenu = document.querySelector('.btn-user__menu');
 
-    btnUser.addEventListener('click', ()=>{
-    
+    btnUser.addEventListener('click', (e)=>{
+        document.addEventListener('click', (e) =>{
+            let nowclick = e.composedPath().includes(btnUser);
+            if(!nowclick){
+                document.querySelector('.button-user').classList.remove('_active');
+                btnUserMenu.classList.remove('show');
+            }
+
+        })
+
        document.querySelector('.button-user').classList.toggle('_active');
        btnUserMenu.classList.toggle('show');
       
-    })
-    //==========================
-    
-    
 
-    function menuAdditionaly(){
-        let btnDots = document.querySelectorAll('.button-addittionaly');
-        btnDots.forEach(btn =>{
-            btn.addEventListener('click', (e)=>{
-                let target = e.target;
-                target.closest('a').nextElementSibling.classList.toggle('show');
-            })
-        })
+
+      
+    })
+
+
+    //=========click additionaly menu
+
+   document.addEventListener('click', (e) => {
+    e.preventDefault();
+    let target = e.target;
+    console.log(target);
+    
+    if (target.classList.contains('clicker')){
+        target.classList.add('_active');
+        target.closest('a').nextElementSibling.classList.toggle('show');
+    } else {
+        document.querySelectorAll('.btn-update').forEach(item => {
+            item.classList.remove('show');
+            
+        });
+        document.querySelectorAll('.clicker').forEach(item => {
+            item.classList.remove('_active');
+            
+        });
     }
-    menuAdditionaly();
-   
+
+
+   })
 
 
 };
