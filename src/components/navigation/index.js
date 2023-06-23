@@ -1,4 +1,4 @@
-import '../../js/register.js';
+import '@/js/register.js';
 
 
 
