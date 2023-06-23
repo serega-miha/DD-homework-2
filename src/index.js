@@ -1,14 +1,14 @@
-import'./sass/style.scss';
-import profile from './assets/img/logo-icon.png';
+import'@/sass/style.scss';
+import profile from '@/assets/img/logo-icon.png';
 
-import { projects, tasks } from './js/database.js';
+import { projects, tasks } from '@/js/database.js';
 
 
 
-import navigation from './components/navigation';
-import projectItem from './components/project-item';
-import taskItem from './components/task-item';
-import empty from './components/empty/empty';
+import navigation from '@/components/navigation';
+import projectItem from '@/components/project-item';
+import taskItem from '@/components/task-item';
+import empty from '@/components/empty/empty';
 
 
 
@@ -86,7 +86,7 @@ function initApp(){
    document.addEventListener('click', (e) => {
     e.preventDefault();
     let target = e.target;
-    console.log(target);
+    
     
     if (target.classList.contains('clicker')){
         target.classList.add('_active');

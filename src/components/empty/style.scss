@@ -1,4 +1,4 @@
-@import '../../sass/color.scss';
+@import '@/sass/color.scss';
 
 
 .page{
@@ -11,10 +11,11 @@
 
 .empty {
     flex: 1 1 auto;
-    background-color: white;
+    background-color:$bg-secondary;
     display: flex;
 }
 .empty__container {
+    display: flex;
    flex: 1 1 auto;
     margin: 20px;
     border-radius: 4px;
