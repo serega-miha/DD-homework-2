@@ -175,15 +175,6 @@ function initApp(){
 
    })
 
-    // ======================= click Promise Lesson 3 ==================//   
-//    document.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     let target = e.target;
-//     console.log(target);
-//    })
-
-
-    // ======================= click Promise Lesson 3 ==================//   
 
 
 };

@@ -1,7 +1,7 @@
 
 
 
-function status(text, statusClass) {
+function status() {
     return `
     <div class="statuses">
             <ul class="status__list">

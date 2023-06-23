@@ -1,12 +1,12 @@
 
 @font-face{
     font-family: 'Open Sans', sans-serif;
-    src: url('../assets/fonts/OpenSans_Condensed-Regular.ttf')
+    src: url('@/assets/fonts/OpenSans_Condensed-Regular.ttf')
 }
 
 @font-face{
     font-family: 'Open Sans bold', sans-serif;
-    src: url('../assets/fonts/OpenSans_Condensed-SemiBold.ttf')
+    src: url('@/assets/fonts/OpenSans_Condensed-SemiBold.ttf')
 }
 
 *{
