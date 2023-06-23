@@ -112,3 +112,39 @@ display: none;
 
 
 
+
+.title h1{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center; 
+ }
+ .title{
+     text-align: center;
+ }
+ .token-btn{
+     margin: 20px auto;
+ }
+ .lesson3 a{
+     text-align: center;
+ }
+ 
+ .lesson3-container{
+     display: flex;
+     justify-content: space-around;
+ }
+ .lesson3-btns{
+     display: flex;
+     flex-direction: column;
+     /* margin: 30px 0px 0px 0px; */
+     
+    
+ }
+ .lesson3-btns h2{
+     padding: 30px 0px;
+ }
+ .lesson3-btns a{
+   
+     margin: 0px 0px 30px 0px;
+ }
+ 
+

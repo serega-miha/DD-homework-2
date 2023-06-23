@@ -2,6 +2,7 @@
 
 function projectItemCard(title, idArticle, authorCreate, authorUpdate) {
     return `<div class="project-item">
+    
         <div class="project-item__main">
             <div class="project-item__title" >
                 <p title="${title}">${title}</p>
@@ -43,8 +44,8 @@ function projectItemCard(title, idArticle, authorCreate, authorUpdate) {
 
 function projectItem(cards) {
     let itemCard = '';
-    cards.forEach(card =>{
-        itemCard+= projectItemCard(card.title, card.idArticle, card.authorCreate, card.authorUpdate)
+    cards.forEach(card => {
+        itemCard += projectItemCard(card.title, card.idArticle, card.authorCreate, card.authorUpdate)
     })
 
     return `
